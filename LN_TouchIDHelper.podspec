@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name     = 'LN_TouchIDHelper'
-  s.version  = '1.0.0'
+  s.version  = '1.0.1'
   s.ios.deployment_target = '8.0'
   s.license= { :type => "MIT", :file => "LICENSE" }
   s.summary  = '一行代码实现指纹解锁功能.'
@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
                           指纹功能集成,一行代码实现.
                    DESC
   s.source   = { :git => 'https://github.com/LionNeo/LN_TouchIDHelper.git', :tag => s.version.to_s }
-  s.source_files = '*.{h,m}'
+  s.source_files = 'LN_TouchIDHelper/**/*.{h,m}'
   s.frameworks = 'Foundation', 'LocalAuthentication'
   s.requires_arc = true
 

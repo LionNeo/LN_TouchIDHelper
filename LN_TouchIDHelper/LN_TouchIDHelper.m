@@ -37,7 +37,7 @@
     LAContext *context = [[LAContext alloc] init];
     NSError *error = nil;
     context.localizedCancelTitle = (cancelTitle == nil || cancelTitle == NULL)? @"取消" : cancelTitle;
-    context.localizedFallbackTitle = (FallbackTitle == nil || FallbackTitle == NULL)? @"输入密码" : FallbackTitle ;
+    context.localizedFallbackTitle = (FallbackTitle == nil || FallbackTitle == NULL)? @"输入密码" : FallbackTitle;
     
     if ([context canEvaluatePolicy:LAPolicyDeviceOwnerAuthenticationWithBiometrics
                              error:&error]) {
@@ -69,7 +69,7 @@
                             case LAErrorUserFallback:{
                                 dispatch_async(dispatch_get_main_queue(), ^{
                                     NSLog(@"用户不使用TouchID,选择手动输入密码");
-                                    block(LN_TouchIDStateInputPassword,error);
+                                    block(LN_TouchIDStateUserFallback,error);
                                 });
                             }
                                 break;
@@ -83,14 +83,14 @@
                             case LAErrorPasscodeNotSet:{
                                 dispatch_async(dispatch_get_main_queue(), ^{
                                     NSLog(@"TouchID 无法启动,因为用户没有设置密码");
-                                    block(LN_TouchIDStatePasswordNotSet,error);
+                                    block(LN_TouchIDStatePasscodeNotSet,error);
                                 });
                             }
                                 break;
                             case LAErrorTouchIDNotEnrolled:{
                                 dispatch_async(dispatch_get_main_queue(), ^{
                                     NSLog(@"TouchID 无法启动,因为用户没有设置TouchID");
-                                    block(LN_TouchIDStateTouchIDNotSet,error);
+                                    block(LN_TouchIDStateTouchIDNotEnrolled,error);
                                 });
                             }
                                 break;

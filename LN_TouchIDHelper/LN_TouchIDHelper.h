@@ -29,7 +29,7 @@ typedef NS_ENUM(NSInteger, LN_TouchIDState){
     /**
      *  用户不使用TouchID,选择手动输入密码
      */
-    LN_TouchIDStateInputPassword = 4,
+    LN_TouchIDStateUserFallback = 4,
     /**
      *  TouchID 被系统取消 (如遇到来电,锁屏,按了Home键等)
      */
@@ -37,11 +37,11 @@ typedef NS_ENUM(NSInteger, LN_TouchIDState){
     /**
      *  TouchID 无法启动,因为用户没有设置密码
      */
-    LN_TouchIDStatePasswordNotSet = 6,
+    LN_TouchIDStatePasscodeNotSet = 6,
     /**
      *  TouchID 无法启动,因为用户没有设置TouchID
      */
-    LN_TouchIDStateTouchIDNotSet = 7,
+    LN_TouchIDStateTouchIDNotEnrolled = 7,
     /**
      *  TouchID 无效
      */

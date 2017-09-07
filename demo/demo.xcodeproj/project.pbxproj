@@ -7,17 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF7C3E701F615BF600EEFC8B /* LN_TouchIDHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7C3E6F1F615BF600EEFC8B /* LN_TouchIDHelper.m */; };
 		EFC4DE471F61344E00FE6589 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EFC4DE461F61344E00FE6589 /* main.m */; };
 		EFC4DE4A1F61344E00FE6589 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EFC4DE491F61344E00FE6589 /* AppDelegate.m */; };
 		EFC4DE4D1F61344E00FE6589 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFC4DE4C1F61344E00FE6589 /* ViewController.m */; };
 		EFC4DE501F61344E00FE6589 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFC4DE4E1F61344E00FE6589 /* Main.storyboard */; };
 		EFC4DE521F61344E00FE6589 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFC4DE511F61344E00FE6589 /* Assets.xcassets */; };
 		EFC4DE551F61344E00FE6589 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFC4DE531F61344E00FE6589 /* LaunchScreen.storyboard */; };
-		EFC4DE5E1F61345C00FE6589 /* LN_TouchIDHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = EFC4DE5D1F61345C00FE6589 /* LN_TouchIDHelper.m */; };
 		EFC4DE611F613A9100FE6589 /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFC4DE601F613A9100FE6589 /* LocalAuthentication.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EF7C3E6E1F615BF600EEFC8B /* LN_TouchIDHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LN_TouchIDHelper.h; sourceTree = "<group>"; };
+		EF7C3E6F1F615BF600EEFC8B /* LN_TouchIDHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LN_TouchIDHelper.m; sourceTree = "<group>"; };
 		EFC4DE421F61344E00FE6589 /* demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFC4DE461F61344E00FE6589 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EFC4DE481F61344E00FE6589 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -28,8 +30,6 @@
 		EFC4DE511F61344E00FE6589 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EFC4DE541F61344E00FE6589 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EFC4DE561F61344E00FE6589 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EFC4DE5C1F61345C00FE6589 /* LN_TouchIDHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LN_TouchIDHelper.h; sourceTree = "<group>"; };
-		EFC4DE5D1F61345C00FE6589 /* LN_TouchIDHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LN_TouchIDHelper.m; sourceTree = "<group>"; };
 		EFC4DE601F613A9100FE6589 /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -45,6 +45,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EF7C3E6D1F615BF600EEFC8B /* LN_TouchIDHelper */ = {
+			isa = PBXGroup;
+			children = (
+				EF7C3E6E1F615BF600EEFC8B /* LN_TouchIDHelper.h */,
+				EF7C3E6F1F615BF600EEFC8B /* LN_TouchIDHelper.m */,
+			);
+			name = LN_TouchIDHelper;
+			path = ../../LN_TouchIDHelper;
+			sourceTree = "<group>";
+		};
 		EFC4DE391F61344E00FE6589 = {
 			isa = PBXGroup;
 			children = (
@@ -65,8 +75,7 @@
 		EFC4DE441F61344E00FE6589 /* demo */ = {
 			isa = PBXGroup;
 			children = (
-				EFC4DE5C1F61345C00FE6589 /* LN_TouchIDHelper.h */,
-				EFC4DE5D1F61345C00FE6589 /* LN_TouchIDHelper.m */,
+				EF7C3E6D1F615BF600EEFC8B /* LN_TouchIDHelper */,
 				EFC4DE481F61344E00FE6589 /* AppDelegate.h */,
 				EFC4DE491F61344E00FE6589 /* AppDelegate.m */,
 				EFC4DE4B1F61344E00FE6589 /* ViewController.h */,
@@ -170,7 +179,7 @@
 			files = (
 				EFC4DE4D1F61344E00FE6589 /* ViewController.m in Sources */,
 				EFC4DE4A1F61344E00FE6589 /* AppDelegate.m in Sources */,
-				EFC4DE5E1F61345C00FE6589 /* LN_TouchIDHelper.m in Sources */,
+				EF7C3E701F615BF600EEFC8B /* LN_TouchIDHelper.m in Sources */,
 				EFC4DE471F61344E00FE6589 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
